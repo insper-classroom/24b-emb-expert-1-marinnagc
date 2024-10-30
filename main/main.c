@@ -42,7 +42,7 @@ int main() {
     adc_gpio_init(ADC_PIN);
     adc_select_input(ADC_NUM);
 
-    set_sys_clock_khz(176000, true);  
+    // set_sys_clock_khz(176000, true);  
     gpio_set_function(AUDIO_PIN, GPIO_FUNC_PWM);
     int audio_pin_slice = pwm_gpio_to_slice_num(AUDIO_PIN);
 
